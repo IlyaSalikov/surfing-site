@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;700&display=swap");
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/style\.scss}line{font-family:\000031}}
 * {
   box-sizing: border-box; }
@@ -170,5 +171,116 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_grid\.scss}line{font-family:\00003104}}
   .hidden-sm {
     display: block; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\000033}}
+* {
+  padding: 0;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\000038}}
+body {
+  font: 1em "Poppins", sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000312}}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  color: #333; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000317}}
+a {
+  color: rgba(35, 36, 40, 0.9);
+  text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000320}}
+  a:hover {
+    color: #5da8ef; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000325}}
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*block site start*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000331}}
+.site-header {
+  padding: 80px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000333}}
+  .site-header .site-logo {
+    margin-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000337}}
+  .site-header .site-nav {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 0.7em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000343}}
+    .site-header .site-nav ul {
+      display: flex;
+      list-style-type: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000346}}
+      .site-header .site-nav ul li {
+        margin: 0 20px; }
+
+/*block site end*/
+/*hero site start*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000355}}
+.hero {
+  position: relative;
+  margin-bottom: 150px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000358}}
+  .hero .hero__text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 35%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000365}}
+    .hero .hero__text .info-block__subtitle {
+      text-transform: uppercase;
+      letter-spacing: 0.4em;
+      font-weight: bold;
+      color: #5da8ef;
+      font-size: 0.7rem;
+      font-family: "Poppins", sans-serif;
+      display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000372}}
+    .hero .hero__text .info-block__title--bigger {
+      font-size: 1.7rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000375}}
+    .hero .hero__text .info-block_body {
+      width: 80%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000377}}
+      .hero .hero__text .info-block_body p {
+        font-size: 0.7rem;
+        color: #8f8f8f; }
+
+/*hero site end*/
+/*block quote start*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000389}}
+.quote {
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000391}}
+  .quote::after {
+    content: "";
+    display: block;
+    background-color: #5da8ef;
+    width: 2px;
+    height: 100px;
+    margin: 35px auto 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\0000399}}
+  .quote__body {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    color: #333; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/Salikov\%20WEB02\%20HTML\/New\/surfing-site\/assets\/scss\/_theme\.scss}line{font-family:\00003104}}
+  .quote__name {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-weight: bold;
+    font-size: 0.6rem;
+    font-style: normal; }
+
+/*block quote end*/
 
 /*# sourceMappingURL=style.css.map */
