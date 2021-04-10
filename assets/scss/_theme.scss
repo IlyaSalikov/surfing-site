@@ -72,10 +72,10 @@ img {
         &__title--bigger {
           font-size: 1.7rem;
         }
-      &_body {
+      .info-block__body {
         width: 80%;
         p {
-          font-size: 0.7rem;
+          font-size: 1rem;
           color: $info-block-color;
         }
       }
@@ -108,3 +108,127 @@ img {
   }
 }
 /*block quote end*/
+
+/*surf-images start*/
+.surf-images {
+  margin-top: 35px;
+  margin-bottom: 150px;
+
+  .surf-images__image1 {
+    margin-right: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .surf-images__surf-images__image1-text {
+      font-family: $body;
+      color: $info-block-color;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    .text-subtitle {
+      @include uppercase();
+      font-size: 0.6em;
+      &::after {
+        content: "";
+        display: block;
+        background-color: $brand-color;
+        width: 85px;
+        height: 2px;
+      }
+    }
+  }
+
+    .surf-images__image2 {
+      margin-top: 75px;
+      height: auto;
+    }
+}
+/*surf-images end*/
+
+/*surfboards start*/
+.surfboards {
+  margin-bottom: 150px;
+}
+/*surfs end*/
+
+/*surf-training start*/
+.surf-training {
+  margin-bottom: 150px;
+  position: relative;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    height: 100%;
+    width: 35%;
+  }
+    .surf-training__surf-training__description__subtitle1 {
+      font-size: 1.4rem;
+      &::after {
+        content: "";
+        display: block;
+        background-color: $brand-color;
+        width: 25px;
+        height: 2px;
+      }
+    }
+
+  .surf-training__surf-training__description__text {
+    font-family: $body;
+    color: $info-block-color;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-right: 30px;
+  }
+    .surf-training__surf-training__description__subtitle2 {
+    @include uppercase();
+    font-size: 0.6em;
+    &::after {
+      content: "";
+      display: block;
+      background-color: $brand-color;
+      width: 85px;
+      height: 2px;
+    }
+    }
+  }
+/*surf-training end*/
+
+/*point-break start*/
+.point-break {
+  display: flex;
+  margin-bottom: 150px;
+  position: relative;
+
+  .point-break__image {
+  }
+
+  .point-break__description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    height: 100%;
+    width: 35%;
+  }
+
+
+
+}
+/*point-break end*/
+
+/*join-the-club*/
+.join-the-club {}
+/*join-the-club*/
+
+/*our-camp*/
+.our-camp {}
+/*our-camp end*/
+
+/*site-footer start*/
+.site-footer {}
+/*site-footer end*/
