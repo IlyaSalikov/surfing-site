@@ -130,13 +130,7 @@ img {
     .text-subtitle {
       @include uppercase();
       font-size: 0.6em;
-      &::after {
-        content: "";
-        display: block;
-        background-color: $brand-color;
-        width: 85px;
-        height: 2px;
-      }
+      @include subtitle2();
     }
   }
 
@@ -147,11 +141,67 @@ img {
 }
 /*surf-images end*/
 
-/*surfboards start*/
-.surfboards {
+/*shop start*/
+.shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 150px;
+
+  .shop__title {
+    margin-bottom: 150px;
+    text-align: center;
+  }
+
+  .shop__surfs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .shop__surfs--choose {
+    background-color: #ebebec;
+    width: 200px;
+    height: 300px;
+  }
+
+  .shop__surfs--description {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .board-title {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-family: $body;
+    color: $info-block-color;
+  }
+
+  .board-name {
+    font-family: $headings;
+  }
+
+  .price {
+    color: #ce60a8;
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+
+  .buy {
+    @include uppercase();
+    font-size: 0.6em;
+    text-align: left;
+  }
+
+  .shop__show-all {
+    margin-top: 80px;
+    text-align: center;
+  }
 }
-/*surfs end*/
+/*shop end*/
 
 /*surf-training start*/
 .surf-training {
@@ -168,32 +218,16 @@ img {
   }
     .surf-training__surf-training__description__subtitle1 {
       font-size: 1.4rem;
-      &::after {
-        content: "";
-        display: block;
-        background-color: $brand-color;
-        width: 25px;
-        height: 2px;
-      }
+      @include subtitle1();
     }
 
   .surf-training__surf-training__description__text {
-    font-family: $body;
-    color: $info-block-color;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    padding-right: 30px;
+    @include description-text();
   }
     .surf-training__surf-training__description__subtitle2 {
     @include uppercase();
     font-size: 0.6em;
-    &::after {
-      content: "";
-      display: block;
-      background-color: $brand-color;
-      width: 85px;
-      height: 2px;
-    }
+    @include subtitle2();
     }
   }
 /*surf-training end*/
@@ -201,10 +235,21 @@ img {
 /*point-break start*/
 .point-break {
   display: flex;
-  margin-bottom: 150px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
   position: relative;
+  &::after {
+    content: "";
+    display: block;
+    background-color: $brand-color;
+    width: 2px;
+    height: 100px;
+    margin: 120px auto 0;
+  }
 
   .point-break__image {
+    margin-right: -100px;
   }
 
   .point-break__description {
@@ -213,22 +258,158 @@ img {
     position: absolute;
     justify-content: center;
     height: 100%;
-    width: 35%;
+
+    .point-break__point-break__description__subtitle1 {
+      font-size: 1.4rem;
+      @include subtitle1();
+    }
+    .point-break__point-break__description__text {
+      @include description-text();
+    }
+
+    .point-break__point-break__description__subtitle2 {
+      @include uppercase();
+      font-size: 0.6em;
+      @include subtitle2();
+    }
   }
-
-
-
 }
 /*point-break end*/
 
 /*join-the-club*/
-.join-the-club {}
+.join-the-club {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+
+  .join-the-club__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .join-the-club__block--subtitle1 {
+    font-size: 1.4rem;
+  }
+  .join-the-club__block--text {
+    font-family: $body;
+    color: $info-block-color;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 600px;
+  }
+
+  .join-the-club__block--e-mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    height: 50px;
+    text-align: left;
+    &::after {
+      content: "";
+      display: block;
+      background-color: $brand-color;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .join-the-club__block--e-mail__span {
+    @include uppercase();
+    font-size: 0.6em;
+    padding-left: 20px;
+  }
+
+/*  .join-the-club__block--e-mail__arrow {
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+  }*/
+}
 /*join-the-club*/
 
 /*our-camp*/
-.our-camp {}
+.our-camp {
+  margin-bottom: 120px;
+
+  .our-camp__img {
+    margin-left: -150px;
+    position: relative;
+  }
+
+  .our-camp__description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    height: 50%;
+    width: 35%;
+  }
+
+  .our-camp__subtitle1 {
+    @include uppercase();
+    color: $info-block-color;
+    font-size: 0.6em;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    letter-spacing: 7px;
+  }
+
+  .our-camp__subtitle2 {
+    font-size: 1.2rem;
+    padding-left: 55px;
+  }
+
+  .our-camp__subtitle3 {
+    @include uppercase();
+    font-size: 0.6em;
+    color: $brand-color;
+    letter-spacing: 7px;
+    margin-top: 50px;
+    &::after {
+      content: "";
+      display: block;
+      background-color: $brand-color;
+      width: 145px;
+      height: 2px;
+    }
+  }
+}
 /*our-camp end*/
 
 /*site-footer start*/
-.site-footer {}
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .site-nav {
+    @include uppercase();
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 0.8em;
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 40px 0 40px 0;
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
+  @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+  .sm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 15px;
+    }
+  }
 /*site-footer end*/
