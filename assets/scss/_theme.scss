@@ -151,6 +151,15 @@ img {
   .shop__title {
     margin-bottom: 150px;
     text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .shop__title--name {
+    @include uppercase();
+    color: $brand-color;
+    font-size: 0.6rem;
+    font-family: $body;
+    display: block;
   }
 
   .shop__surfs {
@@ -158,19 +167,20 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 80px;
   }
+
   .shop__surfs--choose {
     background-color: #ebebec;
-    width: 200px;
-    height: 300px;
+    width: 230px;
+    height: 330px;
   }
 
   .shop__surfs--description {
-    height: 300px;
+    height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-left: -70px;
   }
 
   .board-title {
@@ -188,17 +198,21 @@ img {
     color: #ce60a8;
     text-transform: uppercase;
     font-size: 1.2em;
+    text-align: center;
+    margin-top: 15px;
   }
 
   .buy {
     @include uppercase();
     font-size: 0.6em;
-    text-align: left;
+    text-align: center;
   }
 
   .shop__show-all {
-    margin-top: 80px;
-    text-align: center;
+    @include uppercase();
+    @include subtitle2();
+    font-size: 0.6em;
+    letter-spacing: 5px;
   }
 }
 /*shop end*/
