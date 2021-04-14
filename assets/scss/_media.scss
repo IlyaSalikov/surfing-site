@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) {
+
+  body {
+    margin: 0;
+  }
+
+  .container {
+  }
+
+  .site-header {
+    padding: 15px 0;
+  }
+
+  .hero {
+    margin-bottom: 30px;
+
+    .row {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .col-2, .col-10 {
+      width: auto;
+    }
+
+    .hero__text {
+      position: inherit;
+    }
+
+    .hero__img {
+      width: 100%;
+    }
+  }
+
+    .quote {
+      &::after {
+        width: 100px;
+        height: 2px;
+        margin: 5px auto 0;
+      }
+    }
+}
