@@ -25,6 +25,7 @@
 
     .hero__text {
       position: inherit;
+      width: 100%;
     }
 
     .hero__img {
@@ -32,11 +33,126 @@
     }
   }
 
-    .quote {
-      &::after {
-        width: 100px;
-        height: 2px;
-        margin: 5px auto 0;
+  .quote {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &::after {
+      width: 100px;
+      height: 2px;
+      margin: 5px auto 0;
+    }
+  }
+
+  .surf-images {
+    margin-bottom: 40px;
+    .surf-images__image1 {
+      .col-7 {
+        width: inherit;
+      }
+      .surf-images__surf-images__image1-text {
+        margin-bottom: 10px;
+        margin-top: 80px;
+        width: auto;
       }
     }
+    .surf-images__image2 {
+      margin-top: 20px;
+    }
+  }
+
+  .shop {
+
+    margin-bottom: 40px;
+
+    .col-2 {
+      width: inherit;
+    }
+    .shop__title {
+      margin-bottom: 30px;
+    }
+    .shop__surfs {
+      margin-bottom: 30px;
+    }
+  }
+
+  .surf-training {
+    margin-bottom: 40px;
+
+    .row {
+      flex-direction: column-reverse;
+
+      .col-4, .col-8 {
+      width: inherit;
+      }
+    }
+
+    .surf-training__surf-training__description__text {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+  }
+
+  .point-break {
+    margin-bottom: 40px;
+
+    .row {
+      flex-direction: column;
+
+      .col-4, .col-6 {
+        width: inherit;
+      }
+    }
+/*стили для этого блока теряют приоритет перед главным экраном и я не знаю почему (такой же блок в сёрф-трейне работает)*/
+    .point-break__point-break__description__text {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+  /*стили для этого блока теряют приоритет перед главным экраном и я не знаю почему*/
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .join-the-club {
+    margin-bottom: 40px;
+  }
+
+  .our-camp {
+
+    margin-bottom: 40px;
+
+    .row {
+      flex-direction: column;
+
+      .col-5, .col-7 {
+        width: inherit;
+      }
+    }
+    .our-camp__subtitle2 {
+      margin: 20px 0 20px 0;
+      padding-left: 30px;
+    }
+  }
+
+  .site-footer {
+
+    .site-logo {
+      display: none;
+    }
+    .site-nav {
+
+      font-size: 0.6em;
+
+      ul {
+        margin: 30px 0 15px 0;
+
+        li {
+          margin: 0 40px;
+        }
+      }
+    }
+  }
 }

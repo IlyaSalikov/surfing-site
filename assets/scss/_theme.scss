@@ -43,8 +43,8 @@ img {
     ul {
       display: flex;
       list-style-type: none;
-     li {
-      margin: 0 20px;
+      li {
+        margin: 0 20px;
       }
     }
   }
@@ -62,16 +62,16 @@ img {
     height: 100%;
     width: 35%;
     .info-block {
-        &__subtitle {
-          @include uppercase();
-          color: $brand-color;
-          font-size: 0.7rem;
-          font-family: $body;
-          display: block;
-        }
-        &__title--bigger {
-          font-size: 1.7rem;
-        }
+      &__subtitle {
+        @include uppercase();
+        color: $brand-color;
+        font-size: 0.7rem;
+        font-family: $body;
+        display: block;
+      }
+      &__title--bigger {
+        font-size: 1.7rem;
+      }
       .info-block__body {
         width: 80%;
         p {
@@ -86,16 +86,16 @@ img {
 /*hero site end*/
 
 /*block quote start*/
-  .quote {
-    text-align: center;
-    &::after {
-      content: "";
-      display: block;
-      background-color: $brand-color;
-      width: 2px;
-      height: 100px;
-      margin: 35px auto 0;
-    }
+.quote {
+  text-align: center;
+  &::after {
+    content: "";
+    display: block;
+    background-color: $brand-color;
+    width: 2px;
+    height: 100px;
+    margin: 35px auto 0;
+  }
   &__body {
     font-family: $headings;
     font-weight: 400;
@@ -125,19 +125,20 @@ img {
       color: $info-block-color;
       margin-top: 50px;
       margin-bottom: 30px;
-    }
-
-    .text-subtitle {
-      @include uppercase();
-      font-size: 0.6em;
-      @include subtitle2();
+      width: 350px;
+      .text-subtitle {
+        @include uppercase();
+        @include subtitle2();
+        font-size: 0.6rem;
+        color: #333333;
+      }
     }
   }
 
-    .surf-images__image2 {
-      margin-top: 75px;
-      height: auto;
-    }
+  .surf-images__image2 {
+    margin-top: 50px;
+    height: auto;
+  }
 }
 /*surf-images end*/
 
@@ -220,30 +221,27 @@ img {
 /*surf-training start*/
 .surf-training {
   margin-bottom: 150px;
-  position: relative;
 
   &__description {
     display: flex;
     flex-direction: column;
-    position: absolute;
     justify-content: center;
     height: 100%;
-    width: 35%;
   }
-    .surf-training__surf-training__description__subtitle1 {
-      font-size: 1.4rem;
-      @include subtitle1();
-    }
+  .surf-training__surf-training__description__subtitle1 {
+    font-size: 1.4rem;
+    @include subtitle1();
+  }
 
   .surf-training__surf-training__description__text {
     @include description-text();
   }
-    .surf-training__surf-training__description__subtitle2 {
+  .surf-training__surf-training__description__subtitle2 {
     @include uppercase();
     font-size: 0.6em;
     @include subtitle2();
-    }
   }
+}
 /*surf-training end*/
 
 /*point-break start*/
@@ -262,14 +260,9 @@ img {
     margin: 120px auto 0;
   }
 
-  .point-break__image {
-    margin-right: -100px;
-  }
-
   .point-break__description {
     display: flex;
     flex-direction: column;
-    position: absolute;
     justify-content: center;
     height: 100%;
 
@@ -305,6 +298,7 @@ img {
   .join-the-club__block--subtitle1 {
     font-size: 1.4rem;
   }
+
   .join-the-club__block--text {
     font-family: $body;
     color: $info-block-color;
@@ -321,28 +315,38 @@ img {
     background-color: #f5f5f5;
     height: 50px;
     text-align: left;
-    &::after {
-      content: "";
-      display: block;
-      background-color: $brand-color;
-      width: 50px;
-      height: 50px;
+        &::after {
+          content: "";
+          display: block;
+          background-color: $brand-color;
+          width: 50px;
+          height: 50px;
+        }
+
+    .join-the-club__block--e-mail__text {
+      @include uppercase();
+      font-size: 0.6em;
+      padding-left: 20px;
+    }
+
+    .join-the-club__block--e-mail__arrow {
+      width: 15px;
+      height: 15px;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform: rotate(45deg);
+      margin-right: -466px;
+
+      /*&::after {
+        content: "";
+        display: block;
+        background-color: $brand-color;
+        width: 2px;
+        height: 100px;
+        margin: 120px auto 0;
+      }*/
     }
   }
-
-  .join-the-club__block--e-mail__span {
-    @include uppercase();
-    font-size: 0.6em;
-    padding-left: 20px;
-  }
-
-/*  .join-the-club__block--e-mail__arrow {
-    width: 20px;
-    height: 20px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    transform: rotate(45deg);
-  }*/
 }
 /*join-the-club*/
 
@@ -350,26 +354,17 @@ img {
 .our-camp {
   margin-bottom: 120px;
 
-  .our-camp__img {
-    margin-left: -150px;
-    position: relative;
-  }
-
   .our-camp__description {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    justify-content: center;
-    height: 50%;
-    width: 35%;
+    justify-content: space-evenly;
+    height: 100%;
   }
 
   .our-camp__subtitle1 {
     @include uppercase();
     color: $info-block-color;
     font-size: 0.6em;
-    margin-top: 30px;
-    margin-bottom: 40px;
     letter-spacing: 7px;
   }
 
@@ -383,7 +378,6 @@ img {
     font-size: 0.6em;
     color: $brand-color;
     letter-spacing: 7px;
-    margin-top: 50px;
     &::after {
       content: "";
       display: block;
@@ -424,6 +418,6 @@ img {
     justify-content: space-between;
     width: 200px;
     margin-top: 15px;
-    }
   }
+}
 /*site-footer end*/
